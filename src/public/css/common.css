@@ -1,0 +1,58 @@
+body {
+    font-family: Times, Noto Sans JP;
+    font-size: 1rem;
+}
+
+main {
+    border-top: solid #ececec;
+}
+
+/* ヘッダー */
+header {
+    background-color: #fff;
+    position: relative;
+    align-items: center;
+    padding: 1em;
+}
+
+/* ロゴ */
+.header__logo {
+    color: #8a7a6a;
+    text-decoration: none;
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+
+.button {
+    padding: 0 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    text-align: center;
+    color: #8a7a6a;
+    text-decoration: none;
+    font-size: 1.6em;
+    padding: 0.5em;
+}
+
+/* エラーメッセージのデザイン */
+.register__alert-danger {
+    color: red;
+    padding: 0.2em;
+    background-color: #f4f4f4;
+    font-size: 0.75rem;
+    position: absolute; /* 絶対配置で中央に配置 */
+    left: 50%;
+    transform: translateX(-50%)translateY(-100%);
+}

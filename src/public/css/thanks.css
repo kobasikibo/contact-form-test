@@ -1,0 +1,50 @@
+/* 全体のスタイル */
+body {
+    margin: 0;
+    font-family: Times, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    position: relative; /* 相対位置の基準として設定 */
+}
+
+.thank-you {
+    font-size: 12.5em; /* 大きな文字 */
+    color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1; /* 上に表示するため */
+}
+
+.message {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #847d73;
+    margin: 20px 0;
+    position: absolute;
+    top: 40%; /* 'Thank you'の上にかぶせる位置 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* 'Thank you'の上に表示するため */
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 3px 22px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #82746c;
+    text-decoration: none;
+    position: absolute;
+    top: 60%; /* 'Thank you'の下に位置するように */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* 'Thank you'の上に表示するため */
+}

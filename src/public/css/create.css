@@ -1,0 +1,148 @@
+body {
+    color: #82746d;
+}
+
+header {
+    position: relative;
+    align-items: center;
+    margin-bottom: 2em;
+    padding-bottom: 1.6em;
+}
+
+header__logo {
+    text-decoration: none;
+}
+
+/* 全体のフォーム設定 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em; /* 要素間のスペース */
+}
+
+/* フォームの各グループの設定 */
+div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* 各要素間のスペース */
+}
+
+/* ラベルと入力欄の配置 */
+label.name,
+label.gender,
+label.email,
+label.tell,
+label.address,
+label.building,
+label.category,
+label.detail {
+    width: 25%; /* ラベル部分の幅を30%に設定 */
+    display: flex;
+    font-weight: bold;
+    margin-left: 15%;
+}
+
+.gender {
+    width: 30%; /* ラベル部分の幅を30%に設定 */
+    display: flex;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 44%;
+    border: solid #f4f4f4;
+    background-color: #f4f4f4;
+    color: #000;
+    font-size: 0.65rem;
+    padding: 0.5em;
+}
+
+input[type="radio"] {
+    accent-color: #8a847e;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #8a847e;
+    padding-left: 1.5em;
+}
+
+#tell_part1::placeholder,
+#tell_part2::placeholder,
+#tell_part3::placeholder {
+    text-align: center;
+    padding-right: 1.5em;
+}
+
+select {
+    width: 23%;
+    border: solid #f4f4f4;
+    background-color: #f4f4f4;
+    color: #8a847e;
+    font-size: 0.65rem;
+    padding-left: 1.5em;
+}
+
+#last_name, #first_name {
+  width: 20%;
+}
+
+#last_name {
+  margin-right: 3%;
+}
+
+/* 電話番号入力用の設定 */
+#tell_part1, #tell_part2, #tell_part3 {
+    width: 130px;
+}
+
+#tell_part1, #tell_part2, #tell_part3 {
+    width: 130px;
+}
+
+span {
+    margin: 0 5px; /* ハイフンの左右にスペースを追加 */
+}
+
+.red {
+    color: red;
+    font-size: 0.875rem;
+}
+
+/* テキストエリアの設定 */
+textarea {
+    height: 10em;
+    resize: vertical; /* 垂直方向のリサイズを許可 */
+}
+
+.create__alert-danger {
+    color: red;
+    padding: 0.2em;
+    background-color: #ededeb;
+    font-size: 0.75rem;
+    display: inline-block;
+    position: absolute; /* 絶対配置で中央に配置 */
+    left: 15%;
+    transform: translateY(100%);
+}
+
+button[type="submit"] {
+    padding: 0.3em 1.7em;
+    background-color: #82746d;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    margin-top: 0.8em;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ボタンのホバー効果 */
+button[type="submit"]:hover {
+    background-color: #6f645c;
+}

@@ -1,0 +1,80 @@
+body {
+    color: #82746d;
+}
+
+header {
+    position: relative;
+    align-items: center;
+    margin-bottom: 2em;
+    padding-bottom: 1.6em;
+}
+
+.confirm-container {
+    display: table;
+    width: 67.5%; /* 幅を100%に設定 */
+    margin-left: 17.5%;
+    margin-bottom: 3%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.confirm-row {
+    display: table-row;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.confirm-label,
+.confirm-data {
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
+
+.confirm-label {
+    background-color: #baa89a;
+    color: #fff;
+    display: table-cell;
+    width: 30%;
+    padding: 0.8em;
+    padding-left: 2.7em;
+    text-align: left;
+}
+
+.confirm-data {
+    display: table-cell;
+    padding: 0.5em;
+    padding-left: 2.7em;
+    text-align: left;
+}
+
+button[type="submit"] {
+    padding: 0.3em 1.7em;
+    background-color: #82746d;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    margin-top: 0.8em;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button[type="submit"]:hover {
+    background-color: #6f645c; /* ホバー時の色 */
+}
+
+input[type="submit"] {
+    padding: 0.3em 1.7em;
+    color: #82746d;
+    background-color: #fff;
+    border: none;
+    font-size: 1rem;
+    margin-top: 0.8em;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    text-decoration: underline;
+}

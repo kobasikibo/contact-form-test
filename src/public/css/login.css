@@ -1,0 +1,86 @@
+body {
+    background-color: #f1ece6;
+}
+
+/* resisterボタンのデザイン */
+.button {
+    border: solid #d9c6b7;
+    color: #d9c6b7;
+    background-color: #f6f6f6;
+}
+
+.button:hover {
+    background-color: #e0e0e0;
+    color: #82746d;
+}
+
+/* フォーム全体を囲むボックス */
+form {
+    margin: 0 auto;
+    padding: 3rem 5rem;
+    border: 0.1rem solid #d3d1cd;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+/* 各フォーム要素のデザイン */
+label {
+    color: #847f79;
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.1rem;
+}
+
+/* 入力欄のデザイン */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+    border: solid #f4f4f4;
+    background-color: #f4f4f4;
+    color: #000;
+    font-size: 0.75rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* プレースホルダーの色 */
+input::placeholder {
+    color: #8a847e;
+}
+
+/* ボタンをラップするコンテナ */
+.form-button-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* ログインボタンのデザイン */
+button[type="submit"] {
+    padding: 0.5em 2.5em;
+    background-color: #82746d;
+    color: #ffffff;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* ボタンのホバー効果 */
+button[type="submit"]:hover {
+    background-color: #6f645c;
+}
+
+/* エラーメッセージのデザイン */
+.login__alert-danger {
+    color: red;
+    padding: 0.2em;
+    background-color: #ededeb;
+    font-size: 0.75rem;
+    display: inline-block;
+    position: absolute; /* 絶対配置で中央に配置 */
+    left: 34%;
+    transform: translateY(200%);
+}
